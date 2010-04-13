@@ -107,6 +107,8 @@
         <configuration>
           <tagBase>${project.scm.tag}</tagBase><!-- リリース用タグ用リポジトリパス -->
           <goals>clean,deploy</goals><!-- アプリケーションサーバに配備 -->
+          <username>${scm.username}</username>
+          <password>${scm.password}</password>
         </configuration>
       </plugin>
     </plugins>
