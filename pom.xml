@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
   <packaging>pom</packaging>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <name>Jiemamy - Master POM</name>
   <url>http://report.jiemamy.org/jiemamy-master</url>
   <issueManagement>
