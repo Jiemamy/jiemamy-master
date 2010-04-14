@@ -308,17 +308,17 @@
     <site>
       <id>jiemamy-report</id>
       <name>maven-jiemamy-plugin-site</name>
-      <url>scp://report.jiemamy.org/var/www/report/${project.artifactId}/${project.version}</url>
+      <url>scp://report.jiemamy.org/var/www/report.jiemamy.org/${project.artifactId}/${project.version}</url>
     </site>
     <repository>
       <id>jiemamy-release-repository</id>
       <name>Jiemamy Repository</name>
-      <url>scp://report.jiemamy.org/var/www/maven/release</url>
+      <url>scp://maven.jiemamy.org/var/www/maven.jiemamy.org/release</url>
     </repository>
     <snapshotRepository>
       <id>jiemamy-snapshot-repository</id>
       <name>Jiemamy Repository</name>
-      <url>scp://report.jiemamy.org/var/www/maven/snapshot</url>
+      <url>scp://maven.jiemamy.org/var/www/maven.jiemamy.org/snapshot</url>
     </snapshotRepository>
   </distributionManagement>
   <properties>
