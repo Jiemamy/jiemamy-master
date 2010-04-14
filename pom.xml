@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
   <packaging>pom</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4</version>
   <name>Jiemamy - Master POM</name>
   <url>http://report.jiemamy.org/jiemamy-master</url>
   <issueManagement>
@@ -53,9 +53,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</developerConnection>
-    <url>http://svn.jiemamy.org/products/</url>
+    <connection>scm:svn:scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</connection>
+    <developerConnection>scm:svn:scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</developerConnection>
+    <url>scm:svn:scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</url>
   </scm>
   <build>
     <plugins>
@@ -101,11 +101,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <tagBase>${project.scm.tag}</tagBase><!-- リリース用タグ用リポジトリパス -->
-          <goals>clean,deploy</goals><!-- アプリケーションサーバに配備 -->
+	<configuration>
+		<tagBase>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags</tagBase>
+		<username>shin1ogawa</username>
+		<password>passokok</password>
+	<!--<tagBase>${project.scm.tag}</tagBase>--><!-- リリース用タグ用リポジトリパス -->
+	<!--<goals>clean,deploy</goals>--><!-- アプリケーションサーバに配備 -->
+	<!--
           <username>${scm.username}</username>
           <password>${scm.password}</password>
+	-->
         </configuration>
       </plugin>
     </plugins>
