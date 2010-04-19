@@ -1,0 +1,48 @@
+/*
+ * Copyright 2009 Jiemamy Project and the Others.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+package org.jiemamy.util.enhancer.example._03hooknew;
+
+import java.util.ArrayList;
+
+/**
+ * タイトル付きのリスト。
+ * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @author Suguru ARAKAWA (Gluegent, Inc.)
+ * @param <E> 要素の型
+ */
+public class TitledList<E> extends ArrayList<E> {
+
+    private static final long serialVersionUID = 1901399709978629094L;
+    
+    private String title;
+
+    /**
+     * インスタンスを生成する。
+     * @param title タイトル
+     */
+    public TitledList(String title) {
+        super();
+        this.title = title;
+    }
+    
+    /**
+     * タイトル付きの文字列。
+     */
+    @Override
+    public String toString() {
+        return title + super.toString();
+    }
+}
