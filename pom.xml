@@ -53,9 +53,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</developerConnection>
-    <url>http://svn.jiemamy.org/products/athena/jiemamy-master/tags/jiemamy-master-1.4</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</developerConnection>
+    <url>http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</url>
   </scm>
   <build>
     <plugins>
@@ -102,7 +102,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
 	<configuration>
-		<tagBase>http://svn.jiemamy.org/products/athena/jiemamy-master/tags</tagBase>
+		<!--<tagBase>http://svn.jiemamy.org/products/athena/jiemamy-master/tags</tagBase>-->
 	<!--<tagBase>${project.scm.tag}</tagBase>--><!-- リリース用タグ用リポジトリパス -->
 	<!--<goals>clean,deploy</goals>--><!-- アプリケーションサーバに配備 -->
           <username>${scm.username}</username>
