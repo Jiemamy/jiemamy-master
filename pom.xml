@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <version>1.3-SNAPSHOT</version>
   <name>Jiemamy Master POM</name>
-  <description>The implementation of evolutionary design for database</description>
+  <description>The only one parent of all other Jiemamy's projects</description>
   <url>http://report.jiemamy.org/jiemamy-master</url>
   <issueManagement>
     <system>JIRA</system>
