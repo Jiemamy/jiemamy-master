@@ -53,9 +53,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/athena/jiemamy-master/trunk</developerConnection>
-    <url>http://fisheye.jiemamy.org/browse/athena/jiemamy-master/trunk</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</developerConnection>
+    <url>http://fisheye.jiemamy.org/browse/leto/jiemamy-master/trunk</url>
   </scm>
   <organization>
     <name>Jiemamy Project</name>
