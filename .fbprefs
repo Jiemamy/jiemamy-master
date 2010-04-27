@@ -145,3 +145,4 @@ effort=max
 filter_settings=Low|BAD_PRACTICE,CORRECTNESS,I18N,MALICIOUS_CODE,MT_CORRECTNESS,PERFORMANCE,SECURITY,STYLE|false
 filter_settings_neg=|
 includefilter0=.settings/findbugs.xml
+excludefilter0=.settings/findbugs-exclude.xml
