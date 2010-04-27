@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
   <packaging>pom</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.3-SNAPSHOT</version>
   <name>Jiemamy Master POM</name>
   <description>The parent of other Jiemamy's POMs. It contains basic Maven settings, and children inherit it.</description>
   <url>http://report.jiemamy.org/${project.artifactId}/${project.version}</url>
