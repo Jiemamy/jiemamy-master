@@ -22,7 +22,7 @@ import org.jiemamy.utils.enhancer.InvocationPointcut;
 
 /**
  * {@link GreetingsInterface#say()}のみを対象とするポイントカット。
- * @version $Date: 2009-10-08 22:05:56 +0900 (木, 08 10 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class SayPointcut implements InvocationPointcut {

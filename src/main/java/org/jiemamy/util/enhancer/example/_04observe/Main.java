@@ -29,7 +29,7 @@ import org.jiemamy.utils.enhancer.FactoryEnhancer;
 
 /**
  * このパッケージのプログラムエントリ。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class Main {

@@ -26,7 +26,7 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
 
 /**
  * {@link DaoFactory#newInstance(URL)}のあたりをフックする。
- * @version $Date: 2009-10-08 22:05:56 +0900 (木, 08 10 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA
  */
 public class DaoInitializer implements InvocationHandler {

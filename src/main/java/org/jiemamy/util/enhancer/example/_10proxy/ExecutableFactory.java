@@ -19,7 +19,7 @@ import java.util.concurrent.Callable;
 
 /**
  * {@link Runnable}と{@link Callable}を生成するファクトリ。
- * @version $Date: 2009-10-05 20:36:43 +0900 (月, 05 10 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public interface ExecutableFactory {

@@ -25,7 +25,7 @@ import org.jiemamy.utils.enhancer.Pointcuts;
 
 /**
  * {@link ArrayList}の生成を対象とするポイントカット。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class ArrayListPointcut implements InvocationPointcut {

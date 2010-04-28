@@ -20,7 +20,7 @@ import org.aopalliance.intercept.MethodInvocation;
 
 /**
  * {@link AbstractMethodError}を抑制するAOP Allianceのインターセプタ。
- * @version $Date: 2009-10-08 22:05:56 +0900 (木, 08 10 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class SuppressInterceptor implements MethodInterceptor {

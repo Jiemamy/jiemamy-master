@@ -26,7 +26,7 @@ import org.jiemamy.utils.enhancer.InvocationPointcut;
  * {@link Factory#newInstance(Class)}の拡張位置を指定するポイントカット。
  * {@link ExtensionEnhancer}は{@link FooEnhancer}と似た動作をするので、
  * ほぼ{@link FooEnhancePointcut}と同一の記述ができる。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class ExtensionEnhancePointcut implements InvocationPointcut {

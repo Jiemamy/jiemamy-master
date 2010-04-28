@@ -26,7 +26,7 @@ import org.jiemamy.utils.enhancer.InvocationPointcut;
  * {@link Factory#newHoge()}の拡張位置を指定するポイントカット。
  * {@link HogeEnhancer}は{@code toString()}メソッドをフックする
  * メソッドのみの拡張なので、{@link Hoge#toString()}のみを対象とする。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class HogeEnhancePointcut implements InvocationPointcut {

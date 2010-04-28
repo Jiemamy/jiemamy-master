@@ -17,7 +17,7 @@ package org.jiemamy.util.enhancer.example._01hello;
 
 /**
  * {@link Greetings}オブジェクトのみを生成するファクトリのインターフェース。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public interface Factory {

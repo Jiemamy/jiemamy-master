@@ -24,7 +24,7 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * 代わりに{@code new new ExtensionEnhancer.MyExtension()}を返すことで実現される。
  * なお、{@link HogeEnhancer}の手法と同様に
  * {@link FactoryExtension#newInstance(Class)}をフックする方法でもよい。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class ExtensionEnhancer implements InvocationHandler {
@@ -37,7 +37,7 @@ public class ExtensionEnhancer implements InvocationHandler {
     /**
      * {@link FactoryExtension}の拡張。
      * {@link Bar}クラスのインスタンスを生成できる。
-     * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+     * @version $Date$
      * @author Suguru ARAKAWA
      */
     public class MyExtention extends FactoryExtension {

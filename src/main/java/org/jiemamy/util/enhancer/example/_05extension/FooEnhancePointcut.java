@@ -26,7 +26,7 @@ import org.jiemamy.utils.enhancer.InvocationPointcut;
  * {@link Factory#newFoo()}の拡張位置を指定するポイントカット。
  * {@link FooEnhancer}は{@code new Foo()}によるインスタンス生成をフックするため、
  * {@link Foo#Foo()}を対象とする。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class FooEnhancePointcut implements InvocationPointcut {

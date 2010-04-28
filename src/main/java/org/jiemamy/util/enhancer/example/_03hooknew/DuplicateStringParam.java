@@ -22,7 +22,7 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
 
 /**
  * 文字列引数を2回繰り返す。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class DuplicateStringParam implements InvocationHandler {

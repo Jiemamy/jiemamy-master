@@ -17,7 +17,7 @@ package org.jiemamy.util.enhancer.example._05extension;
 
 /**
  * いくつかの拡張方法を説明するファクトリ。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public interface Factory {

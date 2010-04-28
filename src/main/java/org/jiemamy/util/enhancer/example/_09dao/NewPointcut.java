@@ -26,7 +26,7 @@ import org.jiemamy.utils.enhancer.InvocationPointcut;
 
 /**
  * {@link Dao}をnewする(実際にはその実装)個所をフック。
- * @version $Date: 2009-10-08 22:05:56 +0900 (木, 08 10 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA
  */
 public class NewPointcut implements InvocationPointcut {

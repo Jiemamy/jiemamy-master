@@ -22,7 +22,7 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * {@link FactoryImpl#newFoo()}を拡張する。
  * この拡張は、{@code new Foo()}をフックして
  * 代わりに{@code new new FooEnhancer.ExtendedFoo()}を返すことで実現される。
- * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+ * @version $Date$
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class FooEnhancer implements InvocationHandler {
@@ -34,7 +34,7 @@ public class FooEnhancer implements InvocationHandler {
     
     /**
      * Fooの拡張。
-     * @version $Date: 2009-09-21 02:27:46 +0900 (月, 21  9 2009) $
+     * @version $Date$
      * @author Suguru ARAKAWA
      */
     public class ExtendedFoo extends Foo {
