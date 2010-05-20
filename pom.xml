@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
   <packaging>pom</packaging>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <name>Jiemamy Master POM</name>
   <description>The parent of other Jiemamy's POMs. It contains basic Maven settings, and children inherit it.</description>
   <url>http://report.jiemamy.org/${project.artifactId}/${project.version}</url>
@@ -51,9 +51,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</developerConnection>
-    <url>http://fisheye.jiemamy.org/browse/leto/jiemamy-master/trunk</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/tags/jiemamy-master-1.5</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/tags/jiemamy-master-1.5</developerConnection>
+    <url>http://fisheye.jiemamy.org/browse/leto/jiemamy-master/tags/jiemamy-master-1.5</url>
   </scm>
   <organization>
     <name>Jiemamy Project</name>
