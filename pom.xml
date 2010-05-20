@@ -4,7 +4,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
   <packaging>pom</packaging>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <name>Jiemamy Master POM</name>
   <description>The parent of other Jiemamy's POMs. It contains basic Maven settings, and children inherit it.</description>
   <url>http://report.jiemamy.org/${project.artifactId}/${project.version}</url>
@@ -51,9 +51,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/trunk</developerConnection>
-    <url>http://fisheye.jiemamy.org/browse/leto/jiemamy-master/trunk</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/tags/jiemamy-master-1.5</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/leto/jiemamy-master/tags/jiemamy-master-1.5</developerConnection>
+    <url>http://fisheye.jiemamy.org/browse/leto/jiemamy-master/tags/jiemamy-master-1.5</url>
   </scm>
   <organization>
     <name>Jiemamy Project</name>
@@ -77,14 +77,11 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.4.2</version><!-- see http://code.google.com/p/q4e/issues/detail?id=431 -->
         <configuration>
-          <forkMode>pertest</forkMode>
           <includes>
             <include>**/*Test.java</include>
           </includes>
-          <argLine>-enableassertions -Xms512M -Xmx512M</argLine>
-          <testFailureIgnore>true</testFailureIgnore>
+          <argLine>-Xms512M -Xmx512M</argLine>
         </configuration>
       </plugin>
       <plugin>
@@ -107,6 +104,22 @@
           <username>${scm.username}</username>
           <password>${scm.password}</password>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.atlassian.maven.plugins</groupId>
+        <artifactId>maven-clover2-plugin</artifactId>
+        <version>3.0.2</version>
+        <executions>
+          <execution>
+            <id>clover</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>instrument</goal>
+              <goal>check</goal>
+              <goal>clover</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
@@ -137,6 +150,15 @@
       <url>http://svn.coderepos.org/share/lang/java/misc/maven2repo</url>
     </repository>
     <repository>
+      <id>atlassian</id>
+      <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
+    </repository>
+    <repository>
+      <id>atlassian-proxy</id>
+      <name>Atlassian</name>
+      <url>https://m2proxy.atlassian.com/repository/public</url>
+    </repository>
+    <repository>
       <id>jiemamy.org</id>
       <name>Jiemamy Repository</name>
       <url>http://maven.jiemamy.org/release</url>
@@ -159,6 +181,11 @@
       <releases>
         <enabled>true</enabled>
       </releases>
+    </pluginRepository>
+    <pluginRepository>
+      <id>atlassian</id>
+      <name>Atlassian</name>
+      <url>https://m2proxy.atlassian.com/repository/public</url>
     </pluginRepository>
     <pluginRepository>
       <id>atlassian</id>
