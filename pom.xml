@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jiemamy</groupId>
     <artifactId>generic-master</artifactId>
-    <version>1.0.0</version>
+    <version>0.1.0</version>
   </parent>
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-master</artifactId>
@@ -64,6 +64,13 @@
     <name>Jiemamy Project</name>
     <url>http://jiemamy.org/</url>
   </organization>
+  <repositories>
+    <repository>
+      <id>jiemamy.org</id>
+      <name>Jiemamy Repository</name>
+      <url>http://maven.jiemamy.org/release</url>
+    </repository>
+  </repositories>
   <distributionManagement>
     <site>
       <id>jiemamy-report</id>
