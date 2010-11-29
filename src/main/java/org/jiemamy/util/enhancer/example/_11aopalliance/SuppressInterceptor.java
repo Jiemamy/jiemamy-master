@@ -24,10 +24,11 @@ import org.aopalliance.intercept.MethodInvocation;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class SuppressInterceptor implements MethodInterceptor {
-
-    public Object invoke(MethodInvocation invocation) throws Throwable {
-        System.out.printf("%s の呼び出しをフック%n", invocation.getMethod());
-        System.out.println("invocation.proceed()するとAbstractMethodErrorがスローされるからやめとく");
-        return null;
-    }
+	
+	@SuppressWarnings("unused")
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		System.out.printf("%s の呼び出しをフック%n", invocation.getMethod());
+		System.out.println("invocation.proceed()するとAbstractMethodErrorがスローされるからやめとく");
+		return null;
+	}
 }

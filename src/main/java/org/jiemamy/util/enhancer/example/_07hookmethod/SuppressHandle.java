@@ -24,10 +24,11 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class SuppressHandle implements InvocationHandler {
-
-    public Object handle(Invocation invocation) throws Throwable {
-        System.out.printf("%s の呼び出しをフック%n", invocation.getTarget());
-        System.out.println("invocation.proceed()するとAbstractMethodErrorがスローされるからやめとく");
-        return null;
-    }
+	
+	@SuppressWarnings("unused")
+	public Object handle(Invocation invocation) throws Throwable {
+		System.out.printf("%s の呼び出しをフック%n", invocation.getTarget());
+		System.out.println("invocation.proceed()するとAbstractMethodErrorがスローされるからやめとく");
+		return null;
+	}
 }

@@ -28,26 +28,28 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class ExtensionEnhancer implements InvocationHandler {
+	
+	@SuppressWarnings("unused")
+	public Object handle(Invocation invocation) throws Throwable {
+		// new FactoryExtension() -> new ExtensionEnhancer.MyExtension();
+		return new ExtensionEnhancer.MyExtention();
+	}
+	
 
-    public Object handle(Invocation invocation) throws Throwable {
-        // new FactoryExtension() -> new ExtensionEnhancer.MyExtension();
-        return new ExtensionEnhancer.MyExtention();
-    }
-    
-    /**
-     * {@link FactoryExtension}の拡張。
-     * {@link Bar}クラスのインスタンスを生成できる。
-     * @version $Date$
-     * @author Suguru ARAKAWA
-     */
-    public class MyExtention extends FactoryExtension {
-        
-        @Override
-        public <T> T newInstance(Class<T> type) {
-            if (type == Bar.class) {
-                return type.cast(new Bar());
-            }
-            return null;
-        }
-    }
+	/**
+	 * {@link FactoryExtension}の拡張。
+	 * {@link Bar}クラスのインスタンスを生成できる。
+	 * @version $Date$
+	 * @author Suguru ARAKAWA
+	 */
+	public class MyExtention extends FactoryExtension {
+		
+		@Override
+		public <T>T newInstance(Class<T> type) {
+			if (type == Bar.class) {
+				return type.cast(new Bar());
+			}
+			return null;
+		}
+	}
 }

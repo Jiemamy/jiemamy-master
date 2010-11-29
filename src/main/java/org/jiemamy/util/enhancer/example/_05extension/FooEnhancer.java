@@ -26,22 +26,24 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class FooEnhancer implements InvocationHandler {
+	
+	@SuppressWarnings("unused")
+	public Object handle(Invocation invocation) throws Throwable {
+		// new Foo() -> new ExtendedFoo();
+		return new ExtendedFoo();
+	}
+	
 
-    public Object handle(Invocation invocation) throws Throwable {
-        // new Foo() -> new ExtendedFoo();
-        return new ExtendedFoo();
-    }
-    
-    /**
-     * Fooの拡張。
-     * @version $Date$
-     * @author Suguru ARAKAWA
-     */
-    public class ExtendedFoo extends Foo {
-        
-        @Override
-        public String toString() {
-            return "Foo: new Foo() の結果差し替えによる拡張";
-        }
-    }
+	/**
+	 * Fooの拡張。
+	 * @version $Date$
+	 * @author Suguru ARAKAWA
+	 */
+	public class ExtendedFoo extends Foo {
+		
+		@Override
+		public String toString() {
+			return "Foo: new Foo() の結果差し替えによる拡張";
+		}
+	}
 }

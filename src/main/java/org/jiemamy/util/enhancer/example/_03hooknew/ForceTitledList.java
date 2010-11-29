@@ -25,9 +25,10 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class ForceTitledList implements InvocationHandler {
-
-    public Object handle(Invocation invocation) throws Throwable {
-        Factory f = (Factory) invocation.getInvoker();
-        return f.newTitledList("ByEnhancer");
-    }
+	
+	@SuppressWarnings("unused")
+	public Object handle(Invocation invocation) throws Throwable {
+		Factory f = (Factory) invocation.getInvoker();
+		return f.newTitledList("ByEnhancer");
+	}
 }

@@ -25,8 +25,9 @@ import org.jiemamy.utils.enhancer.InvocationHandler;
  * @author Suguru ARAKAWA (Gluegent, Inc.)
  */
 public class HogeEnhancer implements InvocationHandler {
-
-    public Object handle(Invocation invocation) throws Throwable {
-        return "Hoge: Hoge.toString() のインターセプトによる拡張";
-    }
+	
+	@SuppressWarnings("unused")
+	public Object handle(Invocation invocation) throws Throwable {
+		return "Hoge: Hoge.toString() のインターセプトによる拡張";
+	}
 }
