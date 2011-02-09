@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.jiemamy</groupId>
     <artifactId>generic-master</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jiemamy</groupId>
@@ -12,14 +12,22 @@
   <name>Jiemamy Master POM</name>
   <version>1.7.1-SNAPSHOT</version>
   <description>The parent of other Jiemamy's POMs. It contains basic Maven settings, and children inherit it.</description>
-  <url>http://report.jiemamy.org/${project.artifactId}/${project.version}</url>
+  <url>http://maven.jiemamy.org/site/${project.artifactId}/${project.version}</url>
   <issueManagement>
     <system>JIRA</system>
     <url>http://jira.jiemamy.org/</url>
   </issueManagement>
   <ciManagement>
-    <system>Hudson</system>
-    <url>http://hudson.jiemamy.org/</url>
+    <system>bamboo</system>
+    <url>http://bamboo.jiemamy.org/browse/MPOM-DEF</url>
+    <notifiers>
+      <notifier>
+        <sendOnSuccess>false</sendOnSuccess>
+        <configuration>
+          <recipients>jiemamy-notify@googlegroups.com</recipients>
+        </configuration>
+      </notifier>
+    </notifiers>
   </ciManagement>
   <inceptionYear>2010</inceptionYear>
   <mailingLists>
