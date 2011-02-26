@@ -1,5 +1,5 @@
-#Mon May 17 20:06:15 JST 2010
-block_filters=SourceDirective, privatector
+#Sat Feb 26 14:33:44 JST 2011
+block_filters=SourceDirective, privatector, throw_error
 eclipse.preferences.version=1
 flush_interval=1000
 flush_policy=0
@@ -13,6 +13,7 @@ output_root=target/.clover/bin
 output_root_same_as_project=false
 recreate_output_dirs=true
 regexp_filters[0]=true,0,-1,false,privatector,private \\w+\\(.*
+regexp_filters[1]=true,1,-1,false,throw_error,throw new \\w*Error\\(.*
 should_qualify_java_lang=true
 test_include_filter=**/*Test.java,**/Test*.java
 test_source_folders=0
