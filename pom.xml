@@ -272,8 +272,8 @@
   <distributionManagement>
     <site>
       <id>jiemamy-report</id>
-      <name>maven-jiemamy-plugin-site</name>
-      <url>scp://report.jiemamy.org/var/www/report.jiemamy.org/${project.artifactId}/${project.version}</url>
+      <name>Jiemamy Maven Site</name>
+      <url>scp://maven.jiemamy.org/var/www/maven.jiemamy.org/site/${project.artifactId}/${project.version}</url>
     </site>
     <repository>
       <id>jiemamy-release-repository</id>
